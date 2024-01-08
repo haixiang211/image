@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/testImage"
+        android:layout_width="547.5dp"
+        android:layout_height="311.75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/PhotoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <ImageView
+        android:id="@+id/fullscreen"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/full_screen"
+        app:layout_constraintStart_toStartOf="@id/testImage"
+        app:layout_constraintTop_toBottomOf="@id/testImage" />
+
+    <ImageView
+        android:id="@+id/arrow_up_dic"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_up_dic"
+        app:layout_constraintStart_toStartOf="@id/testImage"
+        app:layout_constraintTop_toBottomOf="@id/testImage" />
+
+    <ImageView
+        android:id="@+id/rotate_left_exe"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="5.5dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/rotate_left_exe"
+        app:layout_constraintStart_toStartOf="@id/testImage"
+        app:layout_constraintTop_toBottomOf="@id/testImage" />
+
+    <ImageView
+        android:id="@+id/arrow_down_dic"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="357dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/arrow_down_dic"
+        app:layout_constraintStart_toStartOf="@id/testImage"
+        app:layout_constraintTop_toBottomOf="@id/testImage" />
+
+    <ImageView
+        android:id="@+id/rotate_right_exe"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="474dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/rotate_right_exe"
+        app:layout_constraintStart_toStartOf="@id/testImage"
+        app:layout_constraintTop_toBottomOf="@id/testImage" />
+
+    <ImageView
+        android:id="@+id/exitFullscreen"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/unfullscreen"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
